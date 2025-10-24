@@ -1,7 +1,3 @@
-Here’s a **ready-to-use project description and `README.md`** you can copy-paste directly into your GitHub repository 👇
-
----
-
 ## 🧠 **Project Description (for GitHub repo “About” section)**
 
 > **Voice Controlled Object Detection** is an AI project that allows users to control and trigger real-time object detection using voice commands.
@@ -96,9 +92,3 @@ This project is licensed under the **MIT License** — you are free to use, modi
 * [Python SpeechRecognition Library](https://pypi.org/project/SpeechRecognition/)
 * [OpenCV](https://opencv.org/)
 
-```
-
----
-
-Would you like me to add a sample `requirements.txt` file too (with the correct Python libraries for your `main.py`)?
-```
