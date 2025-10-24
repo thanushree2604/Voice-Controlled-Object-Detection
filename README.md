@@ -1,4 +1,4 @@
-## 🧠 **Project Description (for GitHub repo “About” section)**
+## 🧠 **Project Description **
 
 > **Voice Controlled Object Detection** is an AI project that allows users to control and trigger real-time object detection using voice commands.
 > It combines **speech recognition** with **computer vision (YOLOv8)** to create a hands-free, interactive system for identifying objects through a webcam or video feed.
@@ -39,8 +39,10 @@ It merges **speech recognition** and **YOLOv8 deep learning** to detect and labe
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/thanushree2604/VoiceCoder_Project.git
-   cd VoiceCoder_Project
+   git clone https://github.com/thanushree2604/Voice-Controlled-Object-Detection.git
+   cd Voice-Controlled-Object-Detection
+Public
+
 ````
 
 2. **Install dependencies**
