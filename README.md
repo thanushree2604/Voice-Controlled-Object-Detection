@@ -1,48 +1,37 @@
-## 🧠 **Project Description **
-
-> **Voice Controlled Object Detection** is an AI project that allows users to control and trigger real-time object detection using voice commands.
-> It combines **speech recognition** with **computer vision (YOLOv8)** to create a hands-free, interactive system for identifying objects through a webcam or video feed.
-
----
-
-## 📄 **README.md**
-
-````markdown
 # 🎤 Voice Controlled Object Detection
 
 ## 🧩 Overview
-**Voice Controlled Object Detection** is an AI-powered application that enables users to control an object detection system using **voice commands**.  
-It merges **speech recognition** and **YOLOv8 deep learning** to detect and label objects in real time — all hands-free.
+**Voice Controlled Object Detection** is a Python-based AI project that combines **speech recognition** and **YOLOv8** computer vision for real-time, voice-controlled object detection.  
+You can simply **speak the object name** (like *person*, *dog*, or *car*), and the system will automatically detect and announce it through your webcam feed — completely hands-free.
 
 ---
 
 ## 🚀 Features
-- 🎙️ Voice-activated commands for starting/stopping detection  
-- 🧠 Real-time object detection using YOLOv8  
-- 📷 Works with webcam or video file input  
-- 🔊 Speech feedback for identified objects (optional)  
-- ⚡ Easy-to-run Python script with minimal setup  
+- 🎙️ Voice commands to control detection  
+- 🧠 Real-time object recognition using **YOLOv8**  
+- 🔊 Text-to-speech feedback via `pyttsx3`  
+- 📷 Webcam-based live detection  
+- 🛑 Voice or keypress-based exit  
+- 💡 Supports common objects (person, car, dog, cat, bottle, etc.)
 
 ---
 
-## 🧠 Technologies Used
+## 🧰 Technologies Used
 - **Python 3.8+**
-- **OpenCV**
-- **YOLOv8 (Ultralytics)**
-- **SpeechRecognition**
-- **PyAudio**
-- **NumPy**
+- **OpenCV** – for video capture and display  
+- **Ultralytics YOLOv8** – for deep-learning object detection  
+- **SpeechRecognition** – for voice command processing  
+- **PyAudio** – for microphone input  
+- **pyttsx3** – for text-to-speech feedback  
 
 ---
 
-## 🧰 Installation & Setup
+## ⚙️ Installation
 
-1. **Clone this repository**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/thanushree2604/Voice-Controlled-Object-Detection.git
    cd Voice-Controlled-Object-Detection
-Public
-
 ````
 
 2. **Install dependencies**
@@ -51,26 +40,40 @@ Public
    pip install -r requirements.txt
    ```
 
+   *(If you don’t have `requirements.txt`, install manually:)*
+
+   ```bash
+   pip install opencv-python ultralytics SpeechRecognition pyttsx3 pyaudio
+   ```
+
 3. **Run the application**
 
    ```bash
    python main.py
    ```
 
-4. **Use voice commands**
+---
 
-   * Say **"start detection"** to begin.
-   * Say **"stop detection"** to stop.
-   * Say **"exit"** to close the program.
+## 🗣️ How It Works
+
+1. The system greets and waits for your **voice command**.
+2. You can say an object name, e.g.,
+
+   > “Detect person” or “Find car”
+3. YOLOv8 processes the webcam feed to identify the object.
+4. When the target object is found, it displays a **“DETECTED”** message on the frame and provides a **spoken confirmation**.
+5. Say **“exit”** or press **Q** to stop detection.
 
 ---
 
-## 📸 Example Workflow
+## 🧪 Supported Voice Commands
 
-1. The app listens for your voice.
-2. Once you say "start detection," it activates YOLOv8.
-3. The camera stream opens and detects objects in real time.
-4. You can stop or exit anytime using your voice.
+| Command          | Action                      |
+| ---------------- | --------------------------- |
+| “Detect person”  | Detects people              |
+| “Find dog”       | Detects dogs                |
+| “Exit” or “Quit” | Stops the program           |
+| “Stop detection” | Ends current detection loop |
 
 ---
 
@@ -91,6 +94,13 @@ This project is licensed under the **MIT License** — you are free to use, modi
 ## ❤️ Acknowledgments
 
 * [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
-* [Python SpeechRecognition Library](https://pypi.org/project/SpeechRecognition/)
+* [SpeechRecognition Library](https://pypi.org/project/SpeechRecognition/)
 * [OpenCV](https://opencv.org/)
+* [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/)
 
+---
+
+```
+
+Would you like me to also generate a `requirements.txt` file for this project (based on the imports in `main.py`)?
+```
